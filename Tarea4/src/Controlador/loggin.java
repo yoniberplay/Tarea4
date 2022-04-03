@@ -124,7 +124,7 @@ public class loggin implements Initializable{
 	    				}
 	    			}
 	    			if (condicion) {
-	    				VentanaEmergente.AvisoEmergente("Datos de usuario, invalidos.");
+	    				VentanaEmergente.AvisoEmergente("Debe ingresar su usuario y contraseña, si no está registrado debe registrarse.");
 	    				txtpasswd.setText("");
 	    				txtusuario.setText("");
 	    				txtusuario.requestFocus();
