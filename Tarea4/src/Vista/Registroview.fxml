@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" minHeight="601.0" minWidth="1200.0" onKeyPressed="#Enter" onMouseDragged="#Mousearrastrado" onMousePressed="#Mousepresionado" onMouseReleased="#MouseSuelto" prefHeight="601.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.registro">
+   <children>
+      <ImageView fitHeight="607.0" fitWidth="820.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../resources/Fotologgin.jpg" />
+         </image>
+      </ImageView>
+      <FontAwesomeIconView fill="#006498" glyphName="CLOSE" layoutX="1162.0" layoutY="32.0" onMousePressed="#CerrarX" selectionFill="#006498" selectionStart="0" size="30" />
+      <FontAwesomeIconView fill="#006498" glyphName="USER_PLUS" layoutX="958.0" layoutY="116.0" size="100" wrappingWidth="105.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="925.0" layoutY="140.0" lineSpacing="19.0" prefHeight="34.0" prefWidth="172.0" text="REGISTRO" textAlignment="CENTER" textFill="#006498">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="829.0" layoutY="185.0" prefHeight="34.0" prefWidth="105.0" text="Usuario" textAlignment="CENTER" textFill="#006498">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="829.0" layoutY="226.0" prefHeight="34.0" prefWidth="105.0" text="Nombre" textAlignment="CENTER" textFill="#006498">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="829.0" layoutY="311.0" prefHeight="34.0" prefWidth="105.0" text="Telefono" textAlignment="CENTER" textFill="#006498">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="829.0" layoutY="267.0" prefHeight="34.0" prefWidth="105.0" text="Apellido" textAlignment="CENTER" textFill="#006498">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtusuario" layoutX="946.0" layoutY="185.0" prefHeight="34.0" prefWidth="235.0" promptText="Introduzca Usuario" style="-fx-border-color: #e1e1e1;">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtnombre" layoutX="946.0" layoutY="226.0" prefHeight="34.0" prefWidth="235.0" promptText="Introduzca nombre" style="-fx-border-color: #e1e1e1;">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtapellido" layoutX="946.0" layoutY="267.0" prefHeight="34.0" prefWidth="235.0" promptText="Introduzca apellido" style="-fx-border-color: #e1e1e1;">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txttelefono" layoutX="946.0" layoutY="311.0" prefHeight="34.0" prefWidth="235.0" promptText="Numero de telefono" style="-fx-border-color: #e1e1e1;">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtcorreo" layoutX="946.0" layoutY="352.0" prefHeight="34.0" prefWidth="235.0" promptText="Correo electronico" style="-fx-border-color: #e1e1e1;">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="829.0" layoutY="352.0" prefHeight="34.0" prefWidth="105.0" text="Email" textAlignment="CENTER" textFill="#006498">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtpasswd" layoutX="946.0" layoutY="393.0" prefHeight="34.0" prefWidth="235.0" promptText="Introduzca Contraseña" style="-fx-border-color: #e1e1e1;">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="txtpasswdconfir" layoutX="946.0" layoutY="436.0" prefHeight="34.0" prefWidth="235.0" promptText="Confirmar Contraseña" style="-fx-border-color: #e1e1e1;">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </PasswordField>
+      <JFXButton fx:id="btnregistrarme" layoutX="913.0" layoutY="479.0" onAction="#AcccionRegistro" prefHeight="38.0" prefWidth="197.0" ripplerFill="WHITE" style="-fx-border-color: #4d9ac8;" text="Registrarme" textFill="#006498">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnsalir" layoutX="912.0" layoutY="529.0" onAction="#Cerrar" prefHeight="38.0" prefWidth="197.0" ripplerFill="WHITE" style="-fx-border-color: #4d9ac8;" text="Salir" textFill="#006498">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblclave" alignment="CENTER" contentDisplay="CENTER" layoutX="829.0" layoutY="393.0" prefHeight="34.0" prefWidth="105.0" text="Contraseña" textAlignment="CENTER" textFill="#006498">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblconfirmacion" alignment="CENTER" contentDisplay="CENTER" layoutX="820.0" layoutY="436.0" prefHeight="34.0" prefWidth="123.0" text="Confirmacion" textAlignment="CENTER" textFill="#006498">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
